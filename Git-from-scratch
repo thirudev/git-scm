@@ -1,3 +1,43 @@
 Initialize git in local terminal:
 command> git init 
 
+There are 2 git config we can use, local & global. 
+
+1) If you have multiple git servers as me, you need to config your git as per folder bases. Or you can use global config.
+   For local git repo config, use:
+
+git config user.name "your-user-name"
+git config user.email "your-email-addr"
+
+This will result in [user] section added to .git/config file:
+[user]
+name = your-user-name
+email = your-email-addr
+
+2) You can use global config also if you only have one git server:
+
+git config --global user.name "your-user-name"
+git config --global user.email "your-email-addr"
+
+Then the [user] section will be present at ~/.gitconfig, with the same content as in the .git/config file.
+
+# How to add file to staging area :
+
+command> git add CommitTest.txt   (For specific file)
+command> git add .                (This command will add all the changes you did to repository)
+
+# How to commit added file/s with some message :
+
+command> git commit -m "write message whatever you wish"
+
+
+# How to add remote git repo to local 
+
+command> git remote add <remote_name> <remote_repo_url>  [ex: remote_name = origin, remote_repo_url = repo url in github]
+
+# How to push chsanges to remote repo master :
+
+command> git push -u <remote_name> <local_branch_name>
+
+
+
