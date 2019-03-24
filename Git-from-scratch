@@ -39,5 +39,6 @@ command> git remote add <remote_name> <remote_repo_url>  [ex: remote_name = orig
 
 command> git push -u <remote_name> <local_branch_name>
 
+# visited on Mar24-2019
 
 
